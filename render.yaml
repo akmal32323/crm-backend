@@ -2,7 +2,7 @@ services:
   - type: web
     name: crm-backend
     runtime: node
-    plan: starter
+    plan: free
     buildCommand: npm install && npm run db:sync
     startCommand: npm start
     envVars:
@@ -25,4 +25,4 @@ services:
 
 databases:
   - name: crm-db
-    plan: starter
+    plan: free
